@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { TestLibsComponent } from './test-libs.component';
 import { TestComponentComponent } from './components/test-component/test-component.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,9 +12,13 @@ import { TestComponentComponent } from './components/test-component/test-compone
     TestComponentComponent
   ],
   imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
-    TestLibsComponent
+    TestLibsComponent,
+    TestComponentComponent
   ]
 })
 export class TestLibsModule { }

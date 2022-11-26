@@ -1,1 +1,7 @@
-<p>test-component works!</p>
+<h1>Hi From Lib</h1>
+<p>
+    Today's item: {{pageTitile}}
+</p>
+<ul *ngIf="rowData">
+    <li *ngFor="let item of rowData">{{item.Name}} {{item.Age}}</li>
+</ul>
